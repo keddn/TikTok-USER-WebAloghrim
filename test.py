@@ -10,7 +10,7 @@ def check_username(username):
         "aid": "1988",
         "app_language": "En",
         "app_name": "tiktok_web",
-        "browser_language": "fr-FR",
+        "browser_language": "en-EN",
         "browser_name": "Mozilla",
         "browser_online": "true",
         "browser_platform": "Win32",
@@ -69,4 +69,5 @@ def check_username(username):
 
 username = input("[!] ENTER USERNAME : ")
 result = check_username(username)
+
 print(json.dumps(result, indent=2, ensure_ascii=False))
