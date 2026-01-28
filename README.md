@@ -15,9 +15,8 @@ node app.js
 ```
 
 ## Test
-
+username checker code
 ```bash
-python simple.py
+python test.py
 ```
-this a username checker script
 ![result](./example.PNG)
