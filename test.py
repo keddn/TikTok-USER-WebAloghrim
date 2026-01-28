@@ -3,6 +3,8 @@ from urllib.parse import urlencode
 import json
 
 KED = "http://localhost:8002"
+ssid = "ur account sessionid"
+
 
 def check_username(username):
     params = {
@@ -55,9 +57,9 @@ def check_username(username):
     }
     
     cookies = {
-        "sessionid": "ked",
-        "sid_tt": "71d", # your account sessionid
-        "ttwid": "1|example",
+        "sessionid": ssid,
+        "sid_tt": ssid, 
+        "ttwid": "1|ked",
     }
     
     session = requests.Session()
@@ -71,3 +73,4 @@ username = input("[!] ENTER USERNAME : ")
 result = check_username(username)
 
 print(json.dumps(result, indent=2, ensure_ascii=False))
+
