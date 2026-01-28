@@ -20,3 +20,4 @@ node app.js
 python simple.py
 ```
 this a username checker script
+![result](./example.PNG)
